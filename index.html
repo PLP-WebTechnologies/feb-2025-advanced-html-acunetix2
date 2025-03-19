@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"></lang>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 Tables, Forms and graphics</title>
+</head>
+<body>
+    <h1>Introduction to HTML 5</h1>
+    <h2>Programming Languages</h2>
+    <!--Ordered list of programming languages-->
+        <ol type="i">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>VB.NET</li>
+            <li>PHP</li>
+            <li>C#</li>
+            <li>C</li>
+        </ol>
+        <!--External Image-->
+    <h2>Programming Laguages Image</h2>
+    <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/ferrari-599xx-oleksiy-maksymenko.jpg" alt="Mercedes Benz Car" width="300" border="2">
+    
+    <!--Contacts form-->
+    <h2>Contacts</h2>
+    <table border="3" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>James Maina</td>
+            <td>55 High Street</td>
+            <td>24 5677 456</td>
+            <td>james@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Paul Maina</td>
+            <td>565 Harmon Street</td>
+            <td>24 667 346</td>
+            <td>paul@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ryan Montgomery</td>
+            <td>123 LA Street</td>
+            <td>24 527 455</td>
+            <td>ryan09@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mary Wambui</td>
+            <td>001 Triage Street</td>
+            <td>24 966 456</td>
+            <td>mary@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Will Aktison</td>
+            <td>55 BondStreet</td>
+            <td>24 237 216</td>
+            <td>will10@gmail.com</td>
+        </tr>
+    </table><br><br>
+
+    <!--Form-->
+    <h3>Login Page</h3>
+    <fieldset><legend>Personal Information</legend>
+        <form action="/register" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Full name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Valid email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="User password" required minlength="8"><br><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="country">Home country:</label><br>
+            <select id="country" name="country">
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+            </select><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+
+            <p>Personal Interests:</p>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>
